@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_farm_manage/home/garden_item.dart';
 import 'package:flutter_farm_manage/model/garden.dart';
 import '../model/dummy_data.dart';
+import 'garden_item.dart';
 
 class HomeTabScreen extends StatefulWidget {
   @override
@@ -13,14 +13,17 @@ class _HomeTabScreenState extends State<HomeTabScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-        padding: EdgeInsets.all(8),
-        itemCount: _gardens.length,
-        itemBuilder: (ctx, index) => GardenItem(
-            _gardens[index].id,
-            _gardens[index].name,
-            _gardens[index].numberRow,
-            _gardens[index].image,
-            index));
+    return GridView.builder(
+      gridDelegate:
+      SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+      scrollDirection: Axis.vertical,
+      itemCount: _gardens.length,
+      padding: EdgeInsets.all(8),
+      itemBuilder: (_, index) => GardenItem(_gardens[index].id,
+          _gardens[index].name,
+          _gardens[index].numberRow,
+          _gardens[index].image,
+          index),
+    );
   }
 }

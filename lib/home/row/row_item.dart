@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_farm_manage/home/row/row_screen.dart';
+import 'package:flutter_farm_manage/home/tree/tree_screen.dart';
 
-class GardenItem extends StatelessWidget {
+class RowItem extends StatelessWidget {
   final String id;
   final String name;
   final int numberRow;
   final String image;
   final int index;
 
-  GardenItem(this.id, this.name, this.numberRow, this.image, this.index);
+  RowItem(this.id, this.name, this.numberRow, this.image, this.index);
 
   void selectRow(BuildContext context) {
-    //Navigator.of(context).pushNamed(RowScreen.routeName, arguments: {'id': id});
+    Navigator.of(context).pushNamed(TreeScreen.routeName, arguments: {'id': id});
   }
 
   @override

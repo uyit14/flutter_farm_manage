@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_farm_manage/home/add_new_garden/addnew_garden_screen.dart';
 import '../cost/cost_tab_screen.dart';
 import '../home/home_tab_screen.dart';
-import '../home/add_new_garden/addnew_garden_screen.dart';
+import '../home/garden/addnew_garden_screen.dart';
 
 class BottomTabsScreen extends StatefulWidget {
   @override

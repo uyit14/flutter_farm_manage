@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_farm_manage/model/garden.dart';
 import '../model/dummy_data.dart';
-import 'garden_item.dart';
+import 'garden/garden_item.dart';
 
 class HomeTabScreen extends StatefulWidget {
   @override

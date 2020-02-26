@@ -4,6 +4,7 @@ class RowModel {
   final String name;
   final int numberTree;
   final String image;
+  final String gardenId;
 
-  const RowModel({@required this.id, @required this.name, this.numberTree, this.image});
+  const RowModel({@required this.id, @required this.name, this.numberTree, this.image, this.gardenId});
 }

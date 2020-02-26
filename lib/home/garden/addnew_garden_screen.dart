@@ -205,6 +205,12 @@ class _AddNewGardenScreenState extends State<AddNewGardenScreen> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.purple,
+        splashColor: Colors.yellow[400],
+        onPressed: (){Navigator.of(context).pushNamed(AddNewGardenScreen.routeName);},
+        child: Icon(Icons.add, color: Colors.white, size: 32,),
+      ),
     );
   }
 }

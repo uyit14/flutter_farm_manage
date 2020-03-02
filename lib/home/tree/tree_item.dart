@@ -39,9 +39,7 @@ class _TreeItemState extends State<TreeItem> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          Flexible(
-            flex: 8,
-            child: CarouselSlider(
+          CarouselSlider(
               height: screenWidth,
               initialPage: 0,
               enlargeCenterPage: true,
@@ -77,10 +75,7 @@ class _TreeItemState extends State<TreeItem> {
                 );
               }).toList(),
             ),
-          ),
-          Flexible(
-            flex: 2,
-            child: Container(
+            Container(
               width: double.infinity,
               decoration: BoxDecoration(
                   color: widget.numberFruit > 80 ? Colors.yellow[300] : Colors.green[300],
@@ -101,9 +96,10 @@ class _TreeItemState extends State<TreeItem> {
                 ],
               ),
             ),
-          ),
         ],
       ),
     );
   }
 }
+
+//test 12345678910
